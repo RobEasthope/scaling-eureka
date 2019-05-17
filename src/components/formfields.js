@@ -1,0 +1,48 @@
+export const formFields = [
+  {
+    id: 'firstName',
+    label: 'First Name',
+    fieldData: firstName,
+    setHook: setFirstName,
+    regex: textRegex,
+    onChange: handleChange,
+    errMsg: 'Please enter a first name using text only',
+  },
+  {
+    id: 'secondName',
+    label: 'Second Name',
+    fieldData: secondName,
+    setHook: setSecondName,
+    regex: textRegex,
+    onChange: handleSecondNameChange,
+    errMsg: 'Please enter a second name using text only',
+  },
+  {
+    id: 'email',
+    label: 'Email address',
+    fieldData: email,
+    setHook: setEmail,
+    regex: emailRegex,
+    onChange: handleEmailChange,
+    errMsg: 'Please enter an email address',
+  },
+  {
+    id: 'phone',
+    label: 'Phone number',
+    fieldData: phone,
+    setHook: setPhone,
+    regex: phoneRegex,
+    onChange: handlePhoneChange,
+    errMsg: 'Please enter a phone number',
+  },
+  {
+    id: 'password',
+    label: 'Password',
+    fieldData: password,
+    setHook: setPassword,
+    regex: passwordRegex,
+    onChange: handlePasswordChange,
+    errMsg:
+      'Please enter a password eight charactors long containing at least one special charactor',
+  },
+];
